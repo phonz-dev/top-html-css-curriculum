@@ -12,23 +12,30 @@ body {
 	font-family: "Roboto", sans-serif;
 }
 
+header,
+nav ul,
+.feat {
+	display: flex;
+}
+
 header {
 	width: 80%;
 	margin: 0 auto;
-	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 1em;
+	padding: 1em 0;
+}
+
+h1 {
+	font-size: 48px;
+	font-weight: bolder;
+	color: #f9faf8;
 }
 
 p,
 a {
 	font-size: 18px;
 	color: #e5e7eb;
-}
-
-nav ul {
-	display: flex;
 }
 
 nav ul li {
@@ -47,6 +54,10 @@ a {
 	text-decoration: none;
 }
 
+img {
+	width: 100%;
+}
+
 .hero,
 footer {
 	background: #1f2937;
@@ -56,4 +67,22 @@ footer {
 	font-size: 24px;
 	color: #f9faf8;
 	font-weight: bold;
+}
+
+.feat {
+	width: 80%;
+	padding: 4em 0;
+	margin: 0 auto;
+	gap: 1em;
+}
+
+.btn {
+	background: #3882f6;
+	border: none;
+	color: #f9faf8;
+	padding: 0.7em 2em;
+	border-radius: 5px;
+	margin-top: 10px;
+	font-weight: bold;
+	cursor: pointer;
 }
