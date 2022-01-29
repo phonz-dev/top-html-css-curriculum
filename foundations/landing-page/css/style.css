@@ -135,11 +135,11 @@ footer {
 }
 
 .quote p,
-h3 {
+.quote h3 {
 	color: #1f2937;
 }
 
-h3 {
+.quote h3 {
 	text-align: right;
 	margin-right: 1em;
 }
@@ -147,4 +147,36 @@ h3 {
 .quote p {
 	font-style: italic;
 	font-size: 36px;
+}
+
+.container {
+	padding: 4em;
+}
+
+.cta {
+	background: #3882f6;
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	padding: 3em 5em;
+	border-radius: 10px;
+	align-items: center;
+}
+
+.cta__left * {
+	color: #e5e7eb;
+}
+
+.cta__left p {
+	font-size: 15px;
+}
+
+.cta__btn {
+	color: #e5e7eb;
+	font-weight: bold;
+	border-radius: 5px;
+	border: 2px solid #e5e7eb;
+	background: transparent;
+	padding: 0.5em 2em;
 }
