@@ -123,3 +123,28 @@ footer {
 	font-size: 12px;
 	text-align: center;
 }
+
+.quote {
+	background: #e5e7eb;
+	padding: 5em 0;
+}
+
+.quote__container {
+	width: 58%;
+	margin: 0 auto;
+}
+
+.quote p,
+h3 {
+	color: #1f2937;
+}
+
+h3 {
+	text-align: right;
+	margin-right: 1em;
+}
+
+.quote p {
+	font-style: italic;
+	font-size: 36px;
+}
