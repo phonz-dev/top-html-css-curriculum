@@ -1,47 +1,61 @@
-body, html {
-  height: 100%;
-  margin: 0;
+body,
+html {
+	height: 100%;
+	margin: 0;
 }
 
 .container {
-  text-align: center;
-  height: 100%;
-  padding: 16px;
-  box-sizing: border-box;
+	text-align: center;
+	height: 100%;
+	padding: 16px;
+	box-sizing: border-box;
+	display: grid;
+	gap: 15px;
+	grid-template: repeat(2, 1fr) 5fr 1fr / 300px 1fr;
+	grid-template-areas:
+		"hdr hdr"
+		"sbr nav"
+		"sbr art"
+		"ftr ftr";
 }
 
 .container div {
-  padding: 15px;
-  font-size: 32px;
-  font-family: Helvetica;
-  font-weight: bold;
-  color: white;
-  border-radius: 15px;
+	padding: 15px;
+	font-size: 32px;
+	font-family: Helvetica;
+	font-weight: bold;
+	color: white;
+	border-radius: 15px;
 }
 
 .header {
-  background-color: #FFDE22;
+	background-color: #ffde22;
+	grid-area: hdr;
 }
 
 .sidebar {
-  background-color: #FF7755;
+	background-color: #ff7755;
+	grid-area: sbr;
 }
 
 .nav {
-  background-color: #00DDFF;
+	background-color: #00ddff;
+	grid-area: nav;
 }
 
 .article {
-  background-color: #bccbde;
+	background-color: #bccbde;
+	grid-area: art;
 }
 
 .article p {
-  font-size: 18px;
-  font-family: sans-serif;
-  color: white;
-  text-align: left;
+	font-size: 18px;
+	font-family: sans-serif;
+	color: white;
+	text-align: left;
 }
 
 .footer {
-  background-color: #393f4d;
+	background-color: #393f4d;
+	grid-area: ftr;
 }
